@@ -1,0 +1,13 @@
+C:\Users\Rafal\source\repos\myLib\wcHost1\bin\Debug\wcHost1.exe.config
+C:\Users\Rafal\source\repos\myLib\wcHost1\bin\Debug\wcHost1.exe
+C:\Users\Rafal\source\repos\myLib\wcHost1\bin\Debug\wcHost1.pdb
+C:\Users\Rafal\source\repos\myLib\wcHost1\bin\Debug\myLib.dll
+C:\Users\Rafal\source\repos\myLib\wcHost1\bin\Debug\myLib.pdb
+C:\Users\Rafal\source\repos\myLib\wcHost1\obj\Debug\wcHost1.csprojAssemblyReference.cache
+C:\Users\Rafal\source\repos\myLib\wcHost1\obj\Debug\wcHost1.csproj.CoreCompileInputs.cache
+C:\Users\Rafal\source\repos\myLib\wcHost1\obj\Debug\wcHost1.csproj.CopyComplete
+C:\Users\Rafal\source\repos\myLib\wcHost1\obj\Debug\wcHost1.exe
+C:\Users\Rafal\source\repos\myLib\wcHost1\obj\Debug\wcHost1.pdb
+C:\Users\Rafal\source\repos\myLib\wcHost1\bin\Debug\myLib.dll.config
+C:\Users\Rafal\source\repos\myLib\wcHost1\obj\Debug\wcHost1.Start.resources
+C:\Users\Rafal\source\repos\myLib\wcHost1\obj\Debug\wcHost1.csproj.GenerateResource.cache

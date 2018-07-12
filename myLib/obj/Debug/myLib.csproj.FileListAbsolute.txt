@@ -1,0 +1,9 @@
+C:\Users\Rafal\source\repos\myLib\myLib\bin\Debug\myLib.dll
+C:\Users\Rafal\source\repos\myLib\myLib\bin\Debug\myLib.pdb
+C:\Users\Rafal\source\repos\myLib\myLib\obj\Debug\myLib.csprojAssemblyReference.cache
+C:\Users\Rafal\source\repos\myLib\myLib\obj\Debug\myLib.csproj.CoreCompileInputs.cache
+C:\Users\Rafal\source\repos\myLib\myLib\obj\Debug\myLib.dll
+C:\Users\Rafal\source\repos\myLib\myLib\obj\Debug\myLib.pdb
+C:\Users\Rafal\source\repos\myLib\myLib\bin\Debug\myLib.dll.config
+C:\Users\Rafal\source\repos\myLib\myLib\obj\Debug\myLib.Form1.resources
+C:\Users\Rafal\source\repos\myLib\myLib\obj\Debug\myLib.csproj.GenerateResource.cache

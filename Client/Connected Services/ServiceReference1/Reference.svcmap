@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="6ba5bcb5-f705-4c01-b158-0d327d6b04c8" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://192.168.0.185:8001/myLib" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="myLib.xsd" MetadataType="Schema" ID="b13bb70b-f549-4828-8733-9a3929f79767" SourceId="1" SourceUrl="http://192.168.0.185:8001/myLib?xsd=xsd2" />
+    <MetadataFile FileName="myLib2.xsd" MetadataType="Schema" ID="a3474393-7cdc-4a00-9eb2-cad725ea1dc2" SourceId="1" SourceUrl="http://192.168.0.185:8001/myLib?xsd=xsd1" />
+    <MetadataFile FileName="myLib.disco" MetadataType="Disco" ID="68b6e04b-e2b0-4816-b421-74cc7673b1a9" SourceId="1" SourceUrl="http://192.168.0.185:8001/myLib?disco" />
+    <MetadataFile FileName="myLib3.xsd" MetadataType="Schema" ID="6fbb94a5-2dad-47b8-aa6d-b793c58692b7" SourceId="1" SourceUrl="http://192.168.0.185:8001/myLib?xsd=xsd3" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="33fcc411-cd5a-44ca-99db-08563343c864" SourceId="1" SourceUrl="http://192.168.0.185:8001/myLib?wsdl" />
+    <MetadataFile FileName="myLib1.xsd" MetadataType="Schema" ID="c3f63806-e143-4669-bb41-ab0f78992da8" SourceId="1" SourceUrl="http://192.168.0.185:8001/myLib?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

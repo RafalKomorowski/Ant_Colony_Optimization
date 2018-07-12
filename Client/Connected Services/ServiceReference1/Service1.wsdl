@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://192.168.0.185:8001/myLib?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://192.168.0.185:8001/myLib?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://192.168.0.185:8001/myLib?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://192.168.0.185:8001/myLib?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/myLib" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Twice_InputMessage">
+    <wsdl:part name="parameters" element="tns:Twice" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Twice_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TwiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GenerownieGrafu_InputMessage">
+    <wsdl:part name="parameters" element="tns:GenerownieGrafu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GenerownieGrafu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GenerownieGrafuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AktualizujFeromon_InputMessage">
+    <wsdl:part name="parameters" element="tns:AktualizujFeromon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AktualizujFeromon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AktualizujFeromonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AktualizujFeromonNew_InputMessage">
+    <wsdl:part name="parameters" element="tns:AktualizujFeromonNew" />
+  </wsdl:message>
+  <wsdl:message name="IService1_AktualizujFeromonNew_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AktualizujFeromonNewResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocGraf_InputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocGraf" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocGraf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocGrafResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocFeromon_InputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocFeromon" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocFeromon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocFeromonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocLiczbeIteracji_InputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocLiczbeIteracji" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocLiczbeIteracji_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocLiczbeIteracjiResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocMiastoStartowe_InputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocMiastoStartowe" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocMiastoStartowe_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocMiastoStartoweResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocLiczbeMrowek_InputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocLiczbeMrowek" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocLiczbeMrowek_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocLiczbeMrowekResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocAlfa_InputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocAlfa" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocAlfa_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocAlfaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocBeta_InputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocBeta" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ZwrocBeta_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ZwrocBetaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_startRysowanie_InputMessage">
+    <wsdl:part name="parameters" element="tns:startRysowanie" />
+  </wsdl:message>
+  <wsdl:message name="IService1_startRysowanie_OutputMessage">
+    <wsdl:part name="parameters" element="tns:startRysowanieResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_startObliczen_InputMessage">
+    <wsdl:part name="parameters" element="tns:startObliczen" />
+  </wsdl:message>
+  <wsdl:message name="IService1_startObliczen_OutputMessage">
+    <wsdl:part name="parameters" element="tns:startObliczenResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PrzeslijDaneDoZapisu_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrzeslijDaneDoZapisu" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PrzeslijDaneDoZapisu_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrzeslijDaneDoZapisuResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PrzeslijStatystyke_InputMessage">
+    <wsdl:part name="parameters" element="tns:PrzeslijStatystyke" />
+  </wsdl:message>
+  <wsdl:message name="IService1_PrzeslijStatystyke_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PrzeslijStatystykeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/GetData" message="tns:IService1_GetData_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/GetDataResponse" message="tns:IService1_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Twice">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/Twice" message="tns:IService1_Twice_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/TwiceResponse" message="tns:IService1_Twice_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GenerownieGrafu">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/GenerownieGrafu" message="tns:IService1_GenerownieGrafu_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/GenerownieGrafuResponse" message="tns:IService1_GenerownieGrafu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AktualizujFeromon">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/AktualizujFeromon" message="tns:IService1_AktualizujFeromon_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/AktualizujFeromonResponse" message="tns:IService1_AktualizujFeromon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AktualizujFeromonNew">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/AktualizujFeromonNew" message="tns:IService1_AktualizujFeromonNew_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/AktualizujFeromonNewResponse" message="tns:IService1_AktualizujFeromonNew_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocGraf">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/ZwrocGraf" message="tns:IService1_ZwrocGraf_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/ZwrocGrafResponse" message="tns:IService1_ZwrocGraf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocFeromon">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/ZwrocFeromon" message="tns:IService1_ZwrocFeromon_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/ZwrocFeromonResponse" message="tns:IService1_ZwrocFeromon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocLiczbeIteracji">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/ZwrocLiczbeIteracji" message="tns:IService1_ZwrocLiczbeIteracji_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/ZwrocLiczbeIteracjiResponse" message="tns:IService1_ZwrocLiczbeIteracji_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocMiastoStartowe">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/ZwrocMiastoStartowe" message="tns:IService1_ZwrocMiastoStartowe_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/ZwrocMiastoStartoweResponse" message="tns:IService1_ZwrocMiastoStartowe_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocLiczbeMrowek">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/ZwrocLiczbeMrowek" message="tns:IService1_ZwrocLiczbeMrowek_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/ZwrocLiczbeMrowekResponse" message="tns:IService1_ZwrocLiczbeMrowek_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocAlfa">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/ZwrocAlfa" message="tns:IService1_ZwrocAlfa_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/ZwrocAlfaResponse" message="tns:IService1_ZwrocAlfa_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocBeta">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/ZwrocBeta" message="tns:IService1_ZwrocBeta_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/ZwrocBetaResponse" message="tns:IService1_ZwrocBeta_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="startRysowanie">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/startRysowanie" message="tns:IService1_startRysowanie_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/startRysowanieResponse" message="tns:IService1_startRysowanie_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="startObliczen">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/startObliczen" message="tns:IService1_startObliczen_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/startObliczenResponse" message="tns:IService1_startObliczen_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrzeslijDaneDoZapisu">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/PrzeslijDaneDoZapisu" message="tns:IService1_PrzeslijDaneDoZapisu_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/PrzeslijDaneDoZapisuResponse" message="tns:IService1_PrzeslijDaneDoZapisu_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PrzeslijStatystyke">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/PrzeslijStatystyke" message="tns:IService1_PrzeslijStatystyke_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/PrzeslijStatystykeResponse" message="tns:IService1_PrzeslijStatystyke_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsam:Action="http://tempuri.org/IService1/GetDataUsingDataContract" message="tns:IService1_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsam:Action="http://tempuri.org/IService1/GetDataUsingDataContractResponse" message="tns:IService1_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Twice">
+      <soap:operation soapAction="http://tempuri.org/IService1/Twice" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenerownieGrafu">
+      <soap:operation soapAction="http://tempuri.org/IService1/GenerownieGrafu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AktualizujFeromon">
+      <soap:operation soapAction="http://tempuri.org/IService1/AktualizujFeromon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AktualizujFeromonNew">
+      <soap:operation soapAction="http://tempuri.org/IService1/AktualizujFeromonNew" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocGraf">
+      <soap:operation soapAction="http://tempuri.org/IService1/ZwrocGraf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocFeromon">
+      <soap:operation soapAction="http://tempuri.org/IService1/ZwrocFeromon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocLiczbeIteracji">
+      <soap:operation soapAction="http://tempuri.org/IService1/ZwrocLiczbeIteracji" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocMiastoStartowe">
+      <soap:operation soapAction="http://tempuri.org/IService1/ZwrocMiastoStartowe" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocLiczbeMrowek">
+      <soap:operation soapAction="http://tempuri.org/IService1/ZwrocLiczbeMrowek" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocAlfa">
+      <soap:operation soapAction="http://tempuri.org/IService1/ZwrocAlfa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ZwrocBeta">
+      <soap:operation soapAction="http://tempuri.org/IService1/ZwrocBeta" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="startRysowanie">
+      <soap:operation soapAction="http://tempuri.org/IService1/startRysowanie" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="startObliczen">
+      <soap:operation soapAction="http://tempuri.org/IService1/startObliczen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrzeslijDaneDoZapisu">
+      <soap:operation soapAction="http://tempuri.org/IService1/PrzeslijDaneDoZapisu" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrzeslijStatystyke">
+      <soap:operation soapAction="http://tempuri.org/IService1/PrzeslijStatystyke" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://192.168.0.185:8001/myLib" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
